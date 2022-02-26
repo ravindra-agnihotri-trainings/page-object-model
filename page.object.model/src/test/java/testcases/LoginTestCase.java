@@ -8,8 +8,8 @@ import pages.DashboardPage;
 import pages.LoginPage;
 import reusable.methods.MethodFactory;
 
-public class LoginTestcase {
-    static WebDriver driver= BaseClass.getDriver();
+public class LoginTestCase {
+    static WebDriver driver= BaseClass.getInstance().getDriver();
     LoginPage loginPage= new LoginPage();
     DashboardPage dashboardPage= new DashboardPage();
 

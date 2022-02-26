@@ -9,8 +9,18 @@ import java.util.concurrent.TimeUnit;
 public class BaseClass {
 
     public static WebDriver driver;
+    private static BaseClass instance;
+    //singleton design pattern achieved
+    public static BaseClass getInstance(){
+        if (instance == null){
+            return instance= new BaseClass();
+        }
+        else {
+            return instance;
+        }
+    }
 
-    public static WebDriver getDriver() {
+    public WebDriver getDriver() {
         WebDriverManager.chromedriver().setup();
         driver= new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

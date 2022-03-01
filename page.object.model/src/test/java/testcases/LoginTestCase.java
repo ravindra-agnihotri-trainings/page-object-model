@@ -9,7 +9,7 @@ import pages.LoginPage;
 import reusable.methods.MethodFactory;
 
 public class LoginTestCase {
-    static WebDriver driver= BaseClass.getInstance().getDriver();
+    static WebDriver driver= BaseClass.getInstance();
     LoginPage loginPage= new LoginPage();
     DashboardPage dashboardPage= new DashboardPage();
 

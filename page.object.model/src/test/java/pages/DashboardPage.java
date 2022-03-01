@@ -13,7 +13,7 @@ public class DashboardPage {
     WebDriver driver;
 
     public DashboardPage(){
-        driver= BaseClass.driver;
+        driver= BaseClass.getInstance();
         PageFactory.initElements(driver,this);
     }
 

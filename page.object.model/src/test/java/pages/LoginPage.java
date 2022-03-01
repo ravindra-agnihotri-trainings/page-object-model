@@ -7,10 +7,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
-    WebDriver driver;
+    WebDriver driver= BaseClass.getInstance();
 
     public LoginPage(){
-        driver= BaseClass.driver;
+
         PageFactory.initElements(driver, this);
     }
 

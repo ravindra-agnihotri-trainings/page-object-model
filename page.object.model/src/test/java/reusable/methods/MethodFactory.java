@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class MethodFactory {
-    static WebDriver driver= BaseClass.driver;
+    static WebDriver driver= BaseClass.getInstance();
 
     public static void scrollTo(WebElement element){
         JavascriptExecutor javascriptExecutor= ((JavascriptExecutor) driver);

@@ -10,7 +10,7 @@ public class BaseClass {
 
     private static WebDriver driver;
     private static BaseClass instance;
-    //singleton design pattern achieved
+    //singleton design pattern added
     public static WebDriver getInstance(){
         if (driver == null){
            instance= new BaseClass();
